@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body style="background-color: grey">
+<style>
+h1{
+ text-align: center;
+ font-size: 20px; 
+}
+.back{
+  font-style: italic;
+}
+h2{
+  text-align: center;
+  font-size:100%;
+}
+h3{
+  text-align: center;
+  font-size: 70%;
+}
+h4{
+  text-align: center;
+  font-size: 130%;
+}
+h5{
+  text-align: center;
+  font-size: 160%;
+}
+.location{
+  text-align: center;
+}
+@media (min-width: 993px){
+div{
+    width: 33.33%;
+    float: left;
+}
+    img{
+        width: 290px;
+        height: 218px;
+    }
+    #title1{
+        margin-top: 25px;
+    }
+    #title2{
+        margin-top: 10px;
+        margin-bottom: 16.8px;
+    }
+    #title3{
+        margin: 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px){
+div{
+    width: 50%;
+    float: left;
+}
+    .images1{
+        width: 100%;
+    }
+    imagesg{
+        width: 320px;
+        height: 240px;
+    }
+    #title1{
+        margin-top: 25px;
+    }
+    #title2{
+        margin-top: 10px;
+        margin-bottom: 16.8px;
+    }
+    .images3{
+        width: 640px;
+        height: 480px;
+    }
+}
+@media (max-width: 768px){
+    .images3{
+        width: 640px;
+        height: 480px;
+    }
+}
+</style>
+  <h1>Галерея</h1>  
+  <a href="index.html" class="back">Назад на головну</a>
+  <h2>Мої зображення</h2>
+  
+<div class="images1">
+  <h3 id="title1">зображення у цій папці</h3>
+  <img class="location" src="cat.jpg"  alt="First cat">
+</div>
+  
+<div class="images2">
+    <h4 id="title2">зображення у папці</h4>
+    <img class="location" src="images/cat2.jpg"  alt=" Second Cat">
+</div>
+
+<div class="images3">
+    <h5 id="title3">Зображення онлайн</h5>
+    <img class="location" src="http://lorempixel.com/output/fashion-q-c-1280-1024-1.jpg"  alt="Photo">
+</div>
+
+</body>
+</html>
